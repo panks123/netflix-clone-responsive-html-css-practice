@@ -1,0 +1,376 @@
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: #fff;
+}
+
+.flex {
+    display: flex;
+}
+.main {
+    background-image: url("assets/images/bg.jpg");
+    height: 95vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.box {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-size: max(1000px, 100vw);
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+}
+.navbar {
+    max-width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+    padding: 22px;
+}
+
+.navbar img {
+    width: 9.25rem;
+    height: 2.5rem;
+}
+
+.navbar img, .navbar button {
+    position: relative;
+    z-index: 1;
+}
+.nav-btns {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.navbar .select-box {
+    position: relative;
+    z-index: 1;
+}
+
+.hero{
+    position: relative;
+    font-family: "Protest Guerrilla", serif;
+    z-index: 2;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100% - 84px);
+    text-align: center;
+}
+
+.rounded {
+    border-radius: 4px;
+}
+.btn {
+    outline: none;
+    border: none;
+    padding: 7px 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.red-btn {
+    background-color: red;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.red-btn:hover {
+    background-color: rgba(223, 4, 4, 0.926);
+}
+
+.hero > :first-child {
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.hero > :nth-child(2) {
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.hero > :nth-child(3) {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-top: 7px;
+}
+
+.email-container {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.email-container > form > input {
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+} 
+
+.email-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.email-container > form > button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.divider {
+    height: 7px;
+    background-color: gray;
+}
+
+section.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 70vw;
+    margin: auto;
+    padding: 100px 0;
+}
+
+.sec-img {
+    position: relative;
+}
+
+.sec-img > img {
+    position: relative;
+    z-index: 10;
+    width: 560px;
+    /* width: 30vw; */
+}
+
+.sec-img > video {
+    position: absolute;
+    top: 55px;
+    right: 16px;
+}
+
+section.first > div :first-child {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+section.first > div :nth-child(2){
+    font-size: 24px;
+    font-weight: bolder;
+    margin-top: 5px;
+}
+.faq {
+    max-width: 80vw;
+    margin: auto;
+    padding: 45px 0;
+}
+
+.faq>h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 48px;
+}
+
+.faqbox {
+    cursor: pointer;
+    margin: 7px 0;
+    background-color: rgb(35, 35, 35);
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.7rem;
+    transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 640px) {
+    .faq>h2 {
+        font-size: 32px;
+    }
+    .faqbox {
+        font-size: 1.3rem;
+    }
+}
+
+.faqbox:hover {
+    background-color: rgb(59, 59, 59);;
+}
+
+.get-started {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+footer {
+    width: 70vw;
+    margin: auto;
+    padding: 45px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer .grid-col {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.grid-col a, footer>p>a {
+    color: rgb(189, 189, 189);
+}
+
+.select-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: inline-flex;
+    border: 1px solid #fff;
+    padding: 4px 7px;
+    gap: 4px;
+}
+.select-box select {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 3px;
+    cursor: pointer;
+    
+}
+
+select:focus {
+    outline: none;
+}
+
+.select-box select option {
+    color: black;
+}
+
+@media screen and (max-width: 580px) {
+    .navbar img {
+        width: 7.25rem;
+        height: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    section.first {
+        padding: 65px;
+        max-width: 75vw;
+    }
+}
+@media screen and (max-width: 1040px) {
+    section.first {
+        padding: 50px;
+        max-width: 85vw;
+    }
+}
+@media screen and (max-width: 980px) {
+    section.first {
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .hero {
+        height: calc(100% - 76px);
+    }
+    .sec-img > img {
+        width: 470px;
+    }
+
+    .sec-img > video {
+        width: 450px;
+        right: 7px;
+    }
+
+    section.first > div :first-child {
+        font-size: 32px;
+    }
+
+    section.first > div :nth-child(2){
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+
+    .hero {
+        height: calc(100% - 84px);
+    }
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .faq {
+        max-width: 95vw;
+    }
+
+    .hero > :first-child {
+        font-size: 2.7rem;
+        font-weight: 900;
+    }
+
+    .hero > :nth-child(2) {
+        font-size: 2.7rem;
+        font-weight: 900;
+    }
+
+    .hero > :nth-child(3) {
+        font-size: 1rem;
+        font-weight: bolder;
+        margin-top: 7px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .hero {
+        height: calc(100% - 76px);
+    }
+    .sec-img > img {
+        width: 380px;
+    }
+
+    .navbar {
+        max-width: 95vw;
+    }
+
+    .sec-img > video {
+        width: 340px;
+        right: 7px;
+        top: 42px;
+    }
+
+    .email-form {
+        flex-direction: column;
+    }
+}
